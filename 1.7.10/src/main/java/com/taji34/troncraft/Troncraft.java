@@ -1,8 +1,10 @@
 package com.taji34.troncraft;
 
+import com.taji34.troncraft.proxies.CommonProxy;
 import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -20,6 +22,10 @@ public class Troncraft {
 
     @Instance(value = Troncraft.MODID)
     public static Troncraft instance;
+
+    @SidedProxy(clientSide = "com.taji34.troncraft.proxies.ClientProxy",
+            serverSide = "com.taji34.troncraft.proxies.ServerProxy")
+    public static CommonProxy proxy;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
