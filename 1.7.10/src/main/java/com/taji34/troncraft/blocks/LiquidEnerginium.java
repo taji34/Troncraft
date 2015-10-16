@@ -31,8 +31,8 @@ public class LiquidEnerginium extends BlockFluidClassic {
     @Override
     public void registerBlockIcons(IIconRegister register) {
         icons = new IIcon[2];
-        icons[0] = register.registerIcon("troncraft:energiniumStill");
-        icons[1] = register.registerIcon("troncraft:energiniumFlowing");
+        icons[0] = register.registerIcon("troncraft:liquidEnerginiumStill");
+        icons[1] = register.registerIcon("troncraft:liquidEnerginiumFlowing");
     }
 
 }
