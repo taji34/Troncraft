@@ -62,8 +62,8 @@ processResources
     }
 }
 
-sourceSets {
-    main {
-        output.resourcesDir = output.classesDir
-    }
+idea{
+	module{
+		inheritOutputDirs = true
+	}
 }
