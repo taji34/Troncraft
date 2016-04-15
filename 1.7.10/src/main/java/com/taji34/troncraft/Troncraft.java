@@ -10,35 +10,48 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 /**
- * Created by Nick on 10/13/2015.
+ * TODO: Write Me
  */
-
-@Mod(modid = Troncraft.MODID, name = Troncraft.MODNAME, version = Troncraft.VERSION)
+@Mod (modid = Troncraft.MODID, name = Troncraft.MODNAME, version = Troncraft.VERSION)
 public class Troncraft {
 
     public static final String MODID = "troncraft";
     public static final String MODNAME = "Troncraft";
     public static final String VERSION = "1.0.0";
-
-    @Instance(value = Troncraft.MODID)
+    @Instance (value = Troncraft.MODID)
     public static Troncraft instance;
-
-    @SidedProxy(clientSide = "com.taji34.troncraft.proxies.ClientProxy",
+    @SidedProxy (clientSide = "com.taji34.troncraft.proxies.ClientProxy",
             serverSide = "com.taji34.troncraft.proxies.ServerProxy")
     public static CommonProxy proxy;
 
+    /**
+     * TODO: Write Me
+     *
+     * @param event
+     */
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
 
     }
 
+    /**
+     * TODO: Write Me
+     *
+     * @param event
+     */
     @EventHandler
     public void load(FMLInitializationEvent event) {
 
     }
 
+    /**
+     * TODO: Write Me
+     *
+     * @param event
+     */
     @EventHandler
     public void postInit(FMLPostInitializationEvent event) {
 
     }
+
 }

@@ -5,22 +5,44 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 /**
- * Created by Nick on 10/13/2015.
+ * TODO: Write Me
  */
 public class ClientProxy extends CommonProxy {
 
+    /**
+     * TODO: Write Me
+     *
+     * @param event
+     */
     @Override
     public void preInit(FMLPreInitializationEvent event) {
+
         super.preInit(event);
+
     }
 
+    /**
+     * TODO: Write Me
+     *
+     * @param event
+     */
     @Override
     public void init(FMLInitializationEvent event) {
+
         super.init(event);
+
     }
 
+    /**
+     * TODO: Write Me
+     *
+     * @param event
+     */
     @Override
     public void postInit(FMLPostInitializationEvent event) {
+
         super.postInit(event);
+
     }
+
 }
